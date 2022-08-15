@@ -87,6 +87,30 @@ section article card p2{
     /* display: block; */
 }
 
+
+ div.image-gallery{
+    display:flex;
+    flex-flow: row wrap;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 40px;
+}
+
+div.image-gallery .normal{
+    width:25%;
+    margin: 20px;
+    display:flex;
+}
+
+div.image-gallery .first-work-img{
+    display:block;
+    margin: 25px;
+    width:100%;
+    align-self:center;
+
+}
+
+
 @media screen and (max-width: 900px) {
 
     main,
