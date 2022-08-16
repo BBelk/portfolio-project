@@ -89,8 +89,9 @@ section article card{
     margin: 5px;
     border-left: 5px solid black;
 }
-section article card p2{
+section article card p{
     /* display: block; */
+    font-size: 20px;
 }
 
 div.first-work-img img{
@@ -168,13 +169,9 @@ div.normal {
 }
 
 div.normal img{
-    /* margin: auto; */
-    /* align-self:center; */
     display:flex;
-    /* width: 80%;  */
     width:auto;
     height:auto;
-    /* transform: scale(0.7); */
 }
 
 figure {
