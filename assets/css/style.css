@@ -94,18 +94,6 @@ section article card p{
     font-size: 20px;
 }
 
-div.first-work-img img{
-    display:block;
-    /* margin: 25px; */
-    width: 100%; 
-    /* max-width: 10px;  */
-    height: 25%;
-    /* align-self:center; */
-    /* text-align: center; */
-    margin:auto;
-
-}
-
 .container {
     
     padding:25px;
@@ -120,7 +108,7 @@ div.first-work-img img{
     bottom: 20px;
     left: 20px;
     background-color: var(--popoutColor);
-    color:#ffdbc5;
+    color:white;
    
     padding: 10px 4px 10px 4px;
     /* margin-bottom: 20px; */
@@ -133,7 +121,6 @@ div.first-work-img img{
     /* padding:25px; */
     position: relative;
     margin:auto;
-   
 }
 
 .hero h2 {
@@ -142,15 +129,26 @@ div.first-work-img img{
     bottom: 30px;
     right: 16px;
     background-color:  var(--popoutColor);
-    color:#ffdbc5;
+    color:white;
    
     padding: 10px 4px 10px 4px;
     margin-bottom: -30px;
     border: 2px solid black;
 }
 
-.container img:hover{
-    transform:rotate(3deg);
+ img:hover{
+    /* transform:rotate(3deg); */
+    transition: all 300ms linear;
+    box-shadow: 2px 4px 4px rgba(131, 131, 131, 0.467);
+    transform: scale(1.02);
+    filter: brightness(90%);
+}
+
+ img:not(:hover){
+    transition: all 300ms linear;
+    box-shadow: none;
+    transform: scale(1.00);
+    filter:brightness(100%);
 }
 
 div.image-gallery{
@@ -159,19 +157,23 @@ div.image-gallery{
     justify-content: center;
 }
 
+div.first-work-img img{
+    display:block;
+    /* margin: 25px; */
+    width: 100%; 
+
+    margin:auto;
+
+}
+
 div.normal {
     display:flex;
-    /* margin:auto; */
-    /* width:40%; */
-    /* flex-wrap:wrap; */
-    /* height:auto; */
-    /* transform: scale(0.7); */
 }
 
 div.normal img{
     display:flex;
-    width:auto;
-    height:auto;
+    /* width:calc(90% - 20px); */
+    /* height:auto; */
 }
 
 figure {
@@ -205,6 +207,7 @@ figure {
     display: flex;
     /* align-content: center; */
     flex-wrap: wrap;
+    flex-direction: row;
     justify-content: space-between;
 }
 
@@ -215,6 +218,15 @@ figure {
     padding:20px;
     color:black;
     text-decoration: underline;
+}
+
+.its-me img{
+    width: 100px;
+    height: 100px;
+    margin:20px;
+    float:left;
+    display:flex;
+    margin-top:0px;
 }
 
 @media screen and (max-width: 900px) {
@@ -284,19 +296,4 @@ figure {
     section article card p{
         display:block;
     }
-    /* Make the sidebar stack below the body */
-    aside {
-      /* order: 2; */
-    }
-    main{
-      order: -1;
-    }
-    /* Change the header background */
-    header {
-      /* background: #772014; */
-    }
-    /* Change the navbar and footer background */
-    nav,
-    footer {
-      /* background-color: #bb8588; */
-    }
+}
