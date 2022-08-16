@@ -124,6 +124,26 @@ div.first-work-img img{
     margin-bottom: 20px;
 }
 
+.hero {
+    width:100%;
+    padding:25px;
+    position: relative;
+    margin:auto;
+   
+}
+
+.hero h2 {
+    font-size: 20px;
+    position: absolute;
+  bottom: 30px;
+  right: 16px;
+    background-color: red;
+    color:#ffdbc5;
+   
+    padding: 10px 4px 10px 4px;
+    margin-bottom: 20px;
+}
+
 .container img:hover{
     transform:rotate(3deg);
 }
@@ -143,6 +163,41 @@ div.image-gallery{
 div.normal img{
     display:flex;
     width: 60%; 
+}
+
+figure {
+    height: 160px;
+    width: 100%;
+    /* margin-bottom: 25px; */
+    background-image: url("../images/library_hero.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.figure-title{
+    width: 100%;
+    margin-top:-50px ;
+    float:right;
+    top:40px;
+    text-align: right;
+    bottom: 50px;
+}
+
+.figure-title h2{
+    background-color: blue;
+}
+
+.contact-part{
+    color: black;
+    display:block;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.contact-part a{
+    margin:auto;
+    padding:10px;
+    color:black;
 }
 
 @media screen and (max-width: 900px) {
