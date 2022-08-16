@@ -5,6 +5,11 @@
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
+:root{
+    --popoutColor: rgb(131, 131, 221);
+}
+
+
 body {
     background-color: #eaefe5;
     display:block;
@@ -88,10 +93,6 @@ section article card p2{
     /* display: block; */
 }
 
-
-
-
-
 div.first-work-img img{
     display:block;
     /* margin: 25px; */
@@ -117,16 +118,18 @@ div.first-work-img img{
     position:absolute;
     bottom: 20px;
     left: 20px;
-    background-color: blue;
+    background-color: var(--popoutColor);
     color:#ffdbc5;
    
     padding: 10px 4px 10px 4px;
-    margin-bottom: 20px;
+    /* margin-bottom: 20px; */
+    margin:auto;
+    border: 2px solid black;
 }
 
 .hero {
     width:100%;
-    padding:25px;
+    /* padding:25px; */
     position: relative;
     margin:auto;
    
@@ -135,13 +138,14 @@ div.first-work-img img{
 .hero h2 {
     font-size: 20px;
     position: absolute;
-  bottom: 30px;
-  right: 16px;
-    background-color: red;
+    bottom: 30px;
+    right: 16px;
+    background-color:  var(--popoutColor);
     color:#ffdbc5;
    
     padding: 10px 4px 10px 4px;
-    margin-bottom: 20px;
+    margin-bottom: -30px;
+    border: 2px solid black;
 }
 
 .container img:hover{
@@ -149,20 +153,28 @@ div.first-work-img img{
 }
 
 div.image-gallery{
-    margin:5px;
     display:flex;
-    /* flex-flow: row wrap; */
     flex-wrap:wrap;
-    align-items: center;
-    /* align-content: center; */
-    background-color: green;
-    /* justify-content: space-evenly; */
-    /* padding: 40px; */
+    justify-content: center;
+}
+
+div.normal {
+    display:flex;
+    /* margin:auto; */
+    /* width:40%; */
+    /* flex-wrap:wrap; */
+    /* height:auto; */
+    /* transform: scale(0.7); */
 }
 
 div.normal img{
+    /* margin: auto; */
+    /* align-self:center; */
     display:flex;
-    width: 60%; 
+    /* width: 80%;  */
+    width:auto;
+    height:auto;
+    /* transform: scale(0.7); */
 }
 
 figure {
@@ -188,16 +200,24 @@ figure {
 }
 
 .contact-part{
-    color: black;
-    display:block;
-    justify-content: space-around;
+    padding-top: 15px;
+    /* margin-right: 20px; */
+    margin:auto;
+    
+    font-size: 20px;
+    display: flex;
+    /* align-content: center; */
     flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .contact-part a{
-    margin:auto;
-    padding:10px;
+    /* float:center; */
+    display:flex;
+    /* margin:auto; */
+    padding:20px;
     color:black;
+    text-decoration: underline;
 }
 
 @media screen and (max-width: 900px) {
